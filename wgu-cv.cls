@@ -79,7 +79,3 @@
   {\\ \textbf{#2}}%
 } 
 
-
-% Local Variables:
-% TeX-engine: luatex
-% End:
