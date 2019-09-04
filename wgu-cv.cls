@@ -1,11 +1,28 @@
-% LaTeX class for a clean modern CV or resume.
-% Written by William G Underwood.
-% Requires LuaLaTeX to compile.
-% Requires fonts Source Code Pro (Monospace) and Cantarell (Regular, Oblique, Bold)
+% wgu-cv.cls
+% -------------------------------------------------------------
+% This class is from
+% https://github.com/WGUNDERWOOD/wgu-cv
+%
+% Author:
+% William G Underwood
+% https://github.com/WGUNDERWOOD
+%
+% Requirements:
+% LuaLaTeX
+% Source Code Pro font
+% Cantarell fonts
+%
+% wgu-cv: a LaTeX class for a clean modern CV or resume.
 
+
+% Identify class
+% -------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wgu-cv}[LaTeX class for writing a CV or resume]
 
+
+% Require packages
+% -------------------------------------------------------------
 \LoadClass[10pt,a4paper]{article}
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{hyperref}
@@ -21,44 +38,54 @@
 \RequirePackage{multicol}
 \RequirePackage{needspace}
 
-% personal details
+
+% Define variables
+% -------------------------------------------------------------
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourphone#1{\def\@yourphone{#1}}
 
-% set fonts
+
+% Set fonts
+% -------------------------------------------------------------
 \setmainfont[
   ItalicFont={Cantarell-Oblique},
   BoldFont={Cantarell-Bold}]
   {Cantarell}
 \setmonofont{Source Code Pro}
 
-% no indents
+
+% Document settings 
+% -------------------------------------------------------------
+% No indents
 \setlength\parindent{0pt}
 
-% bibliography style in-line
+% Bibliography style in-line
 \bibliographystyle{abbrvnat}
 
-% enable footer
+% Enable footer
 \pagestyle{fancy}
 
-% no header
+% No header
 \renewcommand{\headrulewidth}{0pt}
 
-% add date to footer
+% Add date to footer
 \rfoot{\today}
 
-% format lists
+% Format lists
 \setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=4pt, after=\vspace*{0.2cm}}
 
-% clickable mailto links
+% Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
-% no bibliography
+% No bibliography
 \AtBeginDocument{\nobibliography*}
 
-% format title
+
+% Header formatting
+% -------------------------------------------------------------
+% Format title
 \renewcommand{\maketitle}{%
   \vspace*{-1.7cm}%
   \begin{center}%
@@ -72,7 +99,7 @@
   \end{center}%
 }
 
-% format section headers
+% Format section headers
 \newcommand{\cvsection}[1]{%
   \vspace{0.4cm}%
   \par\hbox{\large\textbf{#1}\strut}%
@@ -81,7 +108,7 @@
   \vspace*{-0.2cm}
 }
 
-% format subsection headers
+% Format subsection headers
 \newcommand{\cvsubsection}[4]{%
   \textbf{#1}%
   \hfill\textbf{#3 -- #4}%
