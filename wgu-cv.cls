@@ -9,8 +9,7 @@
 %
 % Requirements:
 % LuaLaTeX
-% Source Code Pro font
-% Cantarell fonts
+% BibTeX
 %
 % wgu-cv: a LaTeX class for a clean modern CV or resume.
 
@@ -37,6 +36,8 @@
 \RequirePackage{ifthen}
 \RequirePackage{multicol}
 \RequirePackage{needspace}
+\RequirePackage[default]{cantarell}
+\RequirePackage{sourcecodepro}
 
 
 % Define variables
@@ -45,15 +46,6 @@
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourphone#1{\def\@yourphone{#1}}
-
-
-% Set fonts
-% -------------------------------------------------------------
-\setmainfont[
-  ItalicFont={Cantarell-Oblique},
-  BoldFont={Cantarell-Bold}]
-  {Cantarell}
-\setmonofont{Source Code Pro}
 
 
 % Document settings 
