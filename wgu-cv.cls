@@ -1,10 +1,10 @@
-% LaTeX class for a modern CV or resume.
-% Written by William George Underwood.
+% LaTeX class for a clean modern CV or resume.
+% Written by William G Underwood.
 % Requires LuaLaTeX to compile.
-% Requires fonts Source Code Pro and Cantarell (Regular, Oblique, Bold)
+% Requires fonts Source Code Pro (Monospace) and Cantarell (Regular, Oblique, Bold)
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wgucv}[LaTeX class for writing a CV or resume]
+\ProvidesClass{wgu-cv}[LaTeX class for writing a CV or resume]
 
 \LoadClass[10pt,a4paper]{article}
 \RequirePackage[margin=1in]{geometry}
@@ -34,15 +34,28 @@
   {Cantarell}
 \setmonofont{Source Code Pro}
 
-% other settings
+% no indents
 \setlength\parindent{0pt}
+
+% bibliography style in-line
 \bibliographystyle{abbrvnat}
+
+% enable footer
 \pagestyle{fancy}
+
+% no header
 \renewcommand{\headrulewidth}{0pt}
+
+% add date to footer
 \rfoot{\today}
+
+% format lists
 \setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=4pt, after=\vspace*{0.2cm}}
+
+% clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
+% no bibliography
 \AtBeginDocument{\nobibliography*}
 
 % format title
