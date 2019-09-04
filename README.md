@@ -2,12 +2,21 @@
 
 ## A clean and modern CV/resume template for TeX.
 
+### Files:
 - The template is defined by the LaTeX class, [wgu-cv.cls].
 - An example of its use is given by [wgu-cv-example.tex].
 - The optional bibliography file is [refs.bib].
 - The rendered pdf is [wgu-cv-example.pdf].
+
+### Dependencies
 - Compilation requires [LuaLaTeX].
+- A full list of required packages is given in [wgu-cv.cls].
+
+### Features
 - Fonts used are [Cantarell] (regular, bold, oblique), and [Source Code Pro] (monospace).
+- Email addresses are automatically typeset as clickable mailto links.
+- The date of compilation is added to the end of each page.
+- Page numbers are shown.
 
 [wgu-cv.cls]: ./wgu-cv.cls
 [wgu-cv-example.tex]: ./wgu-cv-example.tex

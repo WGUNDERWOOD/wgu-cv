@@ -11,13 +11,13 @@
 % LuaLaTeX
 % BibTeX
 %
-% wgu-cv: a LaTeX class for a clean modern CV or resume.
+% wgu-cv: A clean and modern CV/resume template for TeX
 
 
 % Identify class
 % -------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wgu-cv}[LaTeX class for writing a CV or resume]
+\ProvidesClass{wgu-cv}[A clean and modern CV or resume template for TeX]
 
 
 % Require packages

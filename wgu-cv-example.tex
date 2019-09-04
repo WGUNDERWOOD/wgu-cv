@@ -1,64 +1,59 @@
+% Use wgu-cv class
+% -------------------------------------------------------------
 \documentclass{wgu-cv}
 
+
+% Personal details
+% -------------------------------------------------------------
 \yourname{Your name}
 \youraddress{Your address}
 \youremail{your@email.com}
 \yourphone{your phone number}
 
+
+% Begin document
+% -------------------------------------------------------------
 \begin{document}
-
-
 
 \maketitle
 
 
-
-
-
+% Education
+% -------------------------------------------------------------
 \cvsection{EDUCATION} 
 
-
-\cvsubsection{PhD, Statistics}
-{Institution}
-{Sep 2019}{May 2023}
-
-\begin{itemize}
-  \item Awarded a scholarship
-  \item Wrote a thesis 
-\end{itemize}
-
-
-
-\cvsubsection{MMath, Mathematics}
+\cvsubsection{Degree, Subject}
 {University}
-{Oct 2015}{Jun 2019}
-
+{Start date}{End date}
 
 \begin{itemize}
     \item Wrote a dissertation
     \item Graduated with honours
 \end{itemize}
 
+
+% Research interests
+% -------------------------------------------------------------
 \cvsection{RESEARCH INTERESTS}
 
-Mathematics, statistics
+Typesetting, formatting
 
-
-
-
+% Publications
+% -------------------------------------------------------------
 \cvsection{PUBLICATIONS}
 
 \begin{itemize}
-	\item \bibentry{mathematicalpaper}
+	\item \bibentry{some-publication}
 \end{itemize}
 
 
-
+% Employment
+% -------------------------------------------------------------
 \cvsection{EMPLOYMENT}
 
 \cvsubsection{Employer}
 {}
-{Jun 2016}{Sep 2016}
+{Start date}{End date}
 
 \begin{itemize}
   \item Completed a project
@@ -66,45 +61,45 @@ Mathematics, statistics
 \end{itemize}
 
 
-
-
-
-
+% Skills
+% -------------------------------------------------------------
 \cvsection{Skills}
 
 LaTeX, Git
 
 
-
-
-
-
+% References
+% -------------------------------------------------------------
 \cvsection{REFERENCES}
 
 \begin{multicols}{2}
 
 \begin{minipage}{\linewidth}
   Referee One \\
-  Statistics Department \\
-  Institution \\
+  Department \\
+  University \\
   \cvlink{referee1@email.com} \\
 \end{minipage}
 
 \begin{minipage}{\linewidth}
   Referee Two \\
-  Mathematical Institute \\
+  Department \\
   University \\
   \cvlink{referee2@email.com} \\
 \end{minipage}
 
-
 \end{multicols}
 
 
+% End document
+% -------------------------------------------------------------
 \nobibliography{refs}
 
 \end{document}
 
+
+% Local variables for AucTeX
+% -------------------------------------------------------------
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-engine: luatex
