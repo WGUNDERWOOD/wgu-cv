@@ -1,6 +1,9 @@
 % Use wgu-cv class
 % -------------------------------------------------------------
-\documentclass{wgu-cv}
+\documentclass[
+  date,
+  number,
+]{wgu-cv}
 
 
 % Personal details
@@ -14,8 +17,12 @@
 % Begin document
 % -------------------------------------------------------------
 \begin{document}
-
 \maketitle
+
+
+% Bibliography
+% -------------------------------------------------------------
+\nobibliography{refs}
 
 
 % Education
@@ -72,30 +79,29 @@ LaTeX, Git
 % References
 % -------------------------------------------------------------
 \cvsection{REFERENCES}
-
+%
 \begin{multicols}{2}
-
+%
 \begin{minipage}{\linewidth}
   Referee One \\
   Department \\
   University \\
   \cvlink{referee1@email.com} \\
 \end{minipage}
-
+%
 \begin{minipage}{\linewidth}
   Referee Two \\
   Department \\
   University \\
   \cvlink{referee2@email.com} \\
 \end{minipage}
-
+%
 \end{multicols}
 
 
 % End document
 % -------------------------------------------------------------
-\nobibliography{refs}
-
+\nobibliography*
 \end{document}
 
 

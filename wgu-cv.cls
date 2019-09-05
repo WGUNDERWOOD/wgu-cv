@@ -62,8 +62,8 @@
 % No header
 \renewcommand{\headrulewidth}{0pt}
 
-% Add date to footer
-\rfoot{\today}
+% Clear footer
+\cfoot{}
 
 % Format lists
 \setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=4pt, after=\vspace*{0.2cm}}
@@ -71,9 +71,19 @@
 % Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
-% No bibliography
-\AtBeginDocument{\nobibliography*}
 
+% Document options
+% -------------------------------------------------------------
+% Add date to footer
+\DeclareOption{date}{\rfoot{\today}}
+
+% Page numbering
+\DeclareOption{number}{\cfoot{\thepage}}
+
+% Pass other options to class
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+
+\ProcessOptions\relax
 
 % Header formatting
 % -------------------------------------------------------------
