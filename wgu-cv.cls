@@ -66,7 +66,7 @@
 \cfoot{}
 
 % Format lists
-\setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=4pt, after=\vspace*{0.2cm}}
+\setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=6pt, after=\vspace*{0.2cm}}
 
 % Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
