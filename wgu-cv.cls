@@ -85,6 +85,7 @@
 
 \ProcessOptions\relax
 
+
 % Header formatting
 % -------------------------------------------------------------
 % Format title
