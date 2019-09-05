@@ -15,8 +15,10 @@
 ### Features
 - Fonts used are [Cantarell] (regular, bold, oblique), and [Source Code Pro] (monospace).
 - Email addresses are automatically typeset as clickable mailto links.
-- The date of compilation is added to the end of each page.
-- Page numbers are shown.
+
+### Options
+- The date of compilation can be added to the footer of each page.
+- Page numbers can be shown.
 
 [wgu-cv.cls]: ./wgu-cv.cls
 [wgu-cv-example.tex]: ./wgu-cv-example.tex
