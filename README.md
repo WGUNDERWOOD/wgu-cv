@@ -2,7 +2,7 @@
 
 ## A clean and modern CV/resume template for TeX.
 
-### Files:
+### Files
 - The template is defined by the LaTeX class, [wgu-cv.cls].
 - An example of its use is given by [wgu-cv-example.tex].
 - The optional bibliography file is [refs.bib].
