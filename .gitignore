@@ -8,3 +8,4 @@
 *.el
 *.fdb_latexmk
 *.fls
+long/*
