@@ -17,8 +17,8 @@
 - Email addresses are automatically typeset as clickable mailto links.
 
 ### Options
-- The date of compilation can be added to the footer of each page.
-- Page numbers can be shown.
+- The date of compilation can be added to the footer of each page with the **date** option.
+- Page numbers can be shown with the **number** option.
 
 [wgu-cv.cls]: ./wgu-cv.cls
 [cv.tex]: ./cv.tex
