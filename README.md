@@ -4,9 +4,9 @@
 
 ### Files
 - The template is defined by the LaTeX class, [wgu-cv.cls].
-- An example of its use is given by [wgu-cv-example.tex].
+- An example of its use is given by [cv.tex].
 - The optional bibliography file is [refs.bib].
-- The rendered pdf is [wgu-cv-example.pdf].
+- The rendered pdf is [cv.pdf].
 
 ### Dependencies
 - Compilation requires [LuaLaTeX].
@@ -21,9 +21,9 @@
 - Page numbers can be shown.
 
 [wgu-cv.cls]: ./wgu-cv.cls
-[wgu-cv-example.tex]: ./wgu-cv-example.tex
+[cv.tex]: ./cv.tex
 [refs.bib]: ./refs.bib
-[wgu-cv-example.pdf]: ./wgu-cv-example.pdf
+[cv.pdf]: ./cv.pdf
 [Source Code Pro]: https://ctan.org/tex-archive/fonts/sourcecodepro
 [Cantarell]: https://ctan.org/pkg/cantarell
 [LuaLaTeX]: http://www.luatex.org 
