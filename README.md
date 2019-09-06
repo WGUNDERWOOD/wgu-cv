@@ -6,7 +6,7 @@
 - The template is defined by the LaTeX class, [wgu-cv.cls].
 - An example of its use is given by [cv.tex].
 - The optional bibliography file is [refs.bib].
-- The rendered pdf is [cv.pdf].
+- The rendered pdf is [cv.pdf]. This file is for illustrative purposes only, and is not a maintained version of my own CV.
 
 ### Dependencies
 - Compilation requires [LuaLaTeX].
