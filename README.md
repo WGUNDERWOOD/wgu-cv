@@ -17,8 +17,8 @@
 - Email addresses are automatically typeset as clickable mailto links.
 
 ### Options
-- The date of compilation can be added to the footer of each page with the **date** option.
-- Page numbers can be shown with the **number** option.
+- The date of compilation can be added to the footer of each page with the *date* option.
+- Page numbers can be shown with the *number* option.
 
 [wgu-cv.cls]: ./wgu-cv.cls
 [cv.tex]: ./cv.tex
@@ -26,4 +26,4 @@
 [cv.pdf]: ./cv.pdf
 [Source Code Pro]: https://ctan.org/tex-archive/fonts/sourcecodepro
 [Cantarell]: https://ctan.org/pkg/cantarell
-[LuaLaTeX]: http://www.luatex.org 
+[LuaLaTeX]: http://www.luatex.org
