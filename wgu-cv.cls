@@ -48,7 +48,7 @@
 \def\yourphone#1{\def\@yourphone{#1}}
 
 
-% Document settings 
+% Document settings
 % -------------------------------------------------------------
 % No indents
 \setlength\parindent{0pt}
@@ -120,5 +120,4 @@
   }%
   {}%
   {\\ \textbf{#2}}%
-} 
-
+}
