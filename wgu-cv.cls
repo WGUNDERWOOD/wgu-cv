@@ -112,9 +112,9 @@
 }
 
 % Format subsection headers
-\newcommand{\cvsubsection}[4]{%
+\newcommand{\cvsubsection}[3]{%
   \textbf{#1}%
-  \hfill\textbf{#3 -- #4}%
+  \hfill\textbf{#3}%
   \ifthenelse{%
     \equal{#2}{}%
   }%
