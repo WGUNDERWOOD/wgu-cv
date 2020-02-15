@@ -80,6 +80,9 @@
 % Page numbering
 \DeclareOption{number}{\cfoot{\thepage}}
 
+% Do not require unique bib entries
+\providecommand{\nop}[1]{}
+
 % Pass other options to class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 
