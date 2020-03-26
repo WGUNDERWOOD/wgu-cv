@@ -26,7 +26,7 @@
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{fontspec}
-\RequirePackage[UKenglish]{babel}
+\RequirePackage{babel}
 \RequirePackage{microtype}
 \RequirePackage{natbib}
 \RequirePackage{bibentry}
@@ -38,7 +38,6 @@
 \RequirePackage{needspace}
 \RequirePackage[default]{cantarell}
 \RequirePackage{sourcecodepro}
-
 
 % Define variables
 % -------------------------------------------------------------
