@@ -45,6 +45,7 @@
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourphone#1{\def\@yourphone{#1}}
+\def\yourwebsite#1{\def\@yourwebsite{#1}}
 
 
 % Document settings
@@ -99,6 +100,7 @@
     \end{huge}%
     \vspace{0.3cm}%
     \@youraddress \\
+    \href{https://\@yourwebsite}{\nolinkurl{\@yourwebsite}} \\
     \href{mailto:\@youremail}{\nolinkurl{\@youremail}} \\
     \@yourphone%
   \end{center}%
