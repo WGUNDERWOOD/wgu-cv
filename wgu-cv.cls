@@ -22,7 +22,7 @@
 
 % Require packages
 % -------------------------------------------------------------
-\LoadClass[10pt,a4paper]{article}
+\LoadClass[10pt]{article}
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{fontspec}
@@ -50,6 +50,10 @@
 
 % Document settings
 % -------------------------------------------------------------
+% Page size
+\geometry{letterpaper}
+%\geometry{a4paper}
+
 % No indents
 \setlength\parindent{0pt}
 
@@ -70,7 +74,6 @@
 
 % Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
-
 
 % Document options
 % -------------------------------------------------------------
