@@ -2,6 +2,9 @@
 
 ## My current CV, built with a custom TeX template.
 
+Note: GitHub does not always correctly render PDFs,
+so you may wish to download the file before viewing.
+
 ### Files
 - My current CV is [WGUnderwood.pdf]
 - The TeX source for my CV is [WGUnderwood.tex]
