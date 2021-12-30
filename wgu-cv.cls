@@ -115,7 +115,7 @@
   \par\hbox{\large\textbf{#1}\strut}%
   \vspace{-8pt}%
   \rule{\textwidth}{1.5pt}%
-  \vspace*{-0.2cm}
+  \vspace*{0.2cm}%
 }
 
 % Format subsection headers
