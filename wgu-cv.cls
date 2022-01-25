@@ -96,7 +96,7 @@
 % -------------------------------------------------------------
 % Format title
 \renewcommand{\maketitle}{%
-  \vspace*{-1.7cm}%
+  \vspace*{-1.8cm}%
   \begin{center}%
     \begin{huge}%
       \MakeUppercase{\@yourname} \\
