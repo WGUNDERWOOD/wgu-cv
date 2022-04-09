@@ -1,4 +1,4 @@
-# wgu-cv <img src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail.png" alt="thumbnail" align="right" width=300 />
+# wgu-cv <a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/master/WGUnderwood.pdf"> <img src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail.png" alt="thumbnail" align="right" width=300 /> </a>
 
 My current CV, built with a custom TeX template.
 
