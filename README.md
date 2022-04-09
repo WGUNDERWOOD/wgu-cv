@@ -1,6 +1,6 @@
-# wgu-cv
+# wgu-cv <img src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail.png" alt="thumbnail" align="right" width=120 />
 
-## My current CV, built with a custom TeX template.
+My current CV, built with a custom TeX template.
 
 Note: GitHub does not always correctly render PDFs,
 so you may wish to download the file before viewing.
