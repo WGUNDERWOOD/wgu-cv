@@ -11,7 +11,11 @@ pdftoppm \
     WGUnderwood.pdf \
     temp
 
-rm -f thumbnail-*.png
-pngquant temp-1.png -Q 0-10 -o thumbnail-1.png
-pngquant temp-2.png -Q 0-10 -o thumbnail-2.png
-rm -f temp-*.png
+convert \
+    -bordercolor Black \
+    -border 10x10 \
+    -append temp-*.png \
+    temp.png
+
+pngquant temp.png -Q 0-10 -f -o thumbnail.png
+rm -f temp*.png

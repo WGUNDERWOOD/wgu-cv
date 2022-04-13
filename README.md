@@ -1,23 +1,12 @@
+<a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/master/WGUnderwood.pdf">
+<img
+src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail.png"
+alt="thumbnail"
+align="right"
+width=300 />
+</a>
+
 # wgu-cv
-
-
-<div class="frame" style="float: right;">
-
-<a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/master/WGUnderwood.pdf">
-<img
-style="width: 100; margin-top: 0px;"
-src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail-1.png">
-</a>
-
-<br>
-
-<a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/master/WGUnderwood.pdf">
-<img
-style="width: 100; margin-top: 0px;"
-src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail-1.png">
-</a>
-
-</div>
 
 My current CV, built with a custom TeX template.
 
@@ -39,6 +28,7 @@ My current CV, built with a custom TeX template.
 ### Template options
 - The date of compilation can be added to the footer of each page with the *date* option
 - Page numbers can be shown with the *number* option
+
 
 [WGUnderwood.pdf]: ./WGUnderwood.pdf
 [WGUnderwood.tex]: ./WGUnderwood.tex
