@@ -12,9 +12,15 @@ pdftoppm \
     temp
 
 convert \
-    -bordercolor Black \
-    -border 10x10 \
+    -bordercolor Gray \
+    -border 5x5 \
     -append temp-*.png \
+    temp.png
+
+convert \
+    temp.png \
+    -bordercolor Gray \
+    -border 5x5 \
     temp.png
 
 pngquant temp.png -Q 0-10 -f -o thumbnail.png
