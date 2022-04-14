@@ -12,14 +12,14 @@ pdftoppm \
     temp
 
 convert \
-    -bordercolor Gray \
+    -bordercolor gray20 \
     -border 5x5 \
     -append temp-*.png \
     temp.png
 
 convert \
     temp.png \
-    -bordercolor Gray \
+    -bordercolor gray20 \
     -border 5x5 \
     temp.png
 
