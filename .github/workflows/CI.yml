@@ -1,0 +1,13 @@
+name: Compile CV
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile CV with lualatex
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: WGUnderwood.tex
+          latexmk_use_lualatex: true
