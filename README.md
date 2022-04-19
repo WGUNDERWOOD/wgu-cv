@@ -8,6 +8,8 @@ width=300 />
 
 # wgu-cv
 
+[![CI](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/CI.yml/badge.svg)](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/CI.yml)
+
 My current CV, built with a custom TeX template.
 
 ### Files
