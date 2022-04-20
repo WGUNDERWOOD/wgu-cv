@@ -1,6 +1,6 @@
-<a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/master/WGUnderwood.pdf">
+<a href="https://github.com/WGUNDERWOOD/wgu-cv/blob/main/WGUnderwood.pdf">
 <img
-src="https://github.com/WGUNDERWOOD/wgu-cv/raw/master/thumbnail.png"
+src="https://github.com/WGUNDERWOOD/wgu-cv/raw/main/thumbnail.png"
 alt="thumbnail"
 align="right"
 width=300 />
