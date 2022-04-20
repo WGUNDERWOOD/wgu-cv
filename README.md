@@ -16,7 +16,7 @@ My current CV, built with a custom TeX template.
 - My current CV is [WGUnderwood.pdf]
 - The TeX source for my CV is [WGUnderwood.tex]
 - My bibliography file is [WGUnderwood.bib]
-- The template is defined by the LaTeX class, [wgu-cv.cls]
+- The template is defined by the LaTeX class [wgu-cv.cls]
 
 ### Dependencies
 - Compilation requires [LuaLaTeX]
