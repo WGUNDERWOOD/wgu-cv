@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
-latexmk -pdflua WGUnderwood.tex
+latexmk -pdflua -quiet WGUnderwood.tex
 
+optpdf WGUnderwood.pdf
 optpdf WGUnderwood.pdf
 
 pdftoppm \
