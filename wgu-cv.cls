@@ -75,6 +75,7 @@
 % Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
+
 % Document options
 % -------------------------------------------------------------
 % Add date to footer
