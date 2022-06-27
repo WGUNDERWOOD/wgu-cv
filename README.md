@@ -23,7 +23,7 @@ My current CV, built with a custom TeX template.
 - A full list of required packages is given in [wgu-cv.cls]
 
 ### Features
-- Option to include address, email and phone number
+- Include address, email and website
 - Fonts used are [Cantarell] (regular, bold, oblique), and [Source Code Pro] (monospace)
 - Email addresses are automatically typeset as monospace clickable mailto links
 

@@ -44,7 +44,6 @@
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
-\def\yourphone#1{\def\@yourphone{#1}}
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
 
 
@@ -104,9 +103,14 @@
     \end{huge}%
     \vspace{0.3cm}%
     \@youraddress \\
-    \href{https://\@yourwebsite}{\nolinkurl{\@yourwebsite}} \\
-    \href{mailto:\@youremail}{\nolinkurl{\@youremail}} \\
-    \@yourphone%
+    \begin{minipage}{0.45\textwidth}%
+      \centering%
+      \href{mailto:\@youremail}{\nolinkurl{\@youremail}}%
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}%
+      \centering%
+      \href{https://\@yourwebsite}{\nolinkurl{\@yourwebsite}}%
+    \end{minipage}
   \end{center}%
 }
 
