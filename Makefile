@@ -2,6 +2,8 @@ DOCUMENT = "WGUnderwood"
 
 all: latex compress thumbnail warn
 
+.PHONY: latex compress thumbnail warn clean
+
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
 	@latexmk -rc-report- -pdflua -quiet $(DOCUMENT).tex
