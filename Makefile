@@ -1,6 +1,6 @@
 DOCUMENT = "WGUnderwood"
 
-all: latex compress thumbnail warn
+all: latex todo compress thumbnail warn
 
 .PHONY: latex compress thumbnail warn clean
 
@@ -25,6 +25,13 @@ warn: latex
 	@echo -e "\e[0;35m\033[1mChecking for warnings...\e[0;30m\033[0m"
 	@tex-log-parse $(DOCUMENT).log
 	@tex-log-parse $(DOCUMENT).blg
+
+todo:
+	@echo -e "\e[0;35m\033[1mChecking for TODOs...\e[0;30m\033[0m"
+	@todo-finder $(DOCUMENT).tex
+	@todo-finder $(DOCUMENT).bib
+	@todo-finder README.md
+	@todo-finder wgu-cv.cls
 
 clean:
 	@texclean
