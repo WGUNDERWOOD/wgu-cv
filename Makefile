@@ -23,15 +23,15 @@ thumbnail:
 
 warn: latex
 	@echo -e "\e[0;35m\033[1mChecking for warnings...\e[0;30m\033[0m"
-	@tex-log-parse $(DOCUMENT).log
-	@tex-log-parse $(DOCUMENT).blg
+	@tex_log_parse $(DOCUMENT).log
+	@tex_log_parse $(DOCUMENT).blg
 
 todo:
-	@echo -e "\e[0;35m\033[1mChecking for TODOs...\e[0;30m\033[0m"
-	@todo-finder $(DOCUMENT).tex
-	@todo-finder $(DOCUMENT).bib
-	@todo-finder README.md
-	@todo-finder wgu-cv.cls
+	@echo -e "\e[0;35m\033[1mChecking for todos...\e[0;30m\033[0m"
+	@todo_finder $(DOCUMENT).tex
+	@todo_finder $(DOCUMENT).bib
+	@todo_finder README.md
+	@todo_finder wgu-cv.cls
 
 clean:
 	@texclean
