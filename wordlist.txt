@@ -1,0 +1,35 @@
+# whitelist
+Andreas
+Artemiou
+Borel
+Casberd
+Cattaneo
+Charlton
+Cucuringu
+DyadicKDE
+Feng
+Jeston
+Klusowski
+Kolmogorov
+MMath
+Masini
+Matias
+Mihai
+ORF
+ORFE
+PCA
+Pereira
+Preprints
+Sherrerd
+Smallman
+Springer
+WGUnderwood
+Yingjie
+arXiv
+biostatistics
+eprint
+motifcluster
+nonparametric
+primaryClass
+
+# blacklist
