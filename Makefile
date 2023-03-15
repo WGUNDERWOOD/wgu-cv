@@ -42,3 +42,4 @@ todo:
 
 clean:
 	@texclean
+	@rm *.html
