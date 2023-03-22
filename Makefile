@@ -1,14 +1,18 @@
 DOC = "WGUnderwood"
 
-all: latex todo compress thumbnail warn spell
+all: indent latex todo compress thumbnail warn spell
 
-.PHONY: latex compress thumbnail warn clean spell
+.PHONY: indent latex compress thumbnail warn clean spell
+
+indent:
+	@latexindent -w $(DOC).tex
+	@latexindent $(DOC).bib > indent.tmp
+	@latexindent -w $wgu-cv.cls
 
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
 	@latexmk -rc-report- -pdflua -quiet $(DOC).tex | \
 		grep -v "Latexmk: Nothing to do for" || true
-
 
 compress:
 	@echo -e "\e[0;35m\033[1mCompressing PDF...\e[0;30m\033[0m"
@@ -42,4 +46,5 @@ todo:
 
 clean:
 	@texclean
-	@rm *.html
+	@rm -f *.html
+	@rm -f *.bak[0-9]*
