@@ -5,9 +5,9 @@ all: indent latex todo compress thumbnail warn spell
 .PHONY: indent latex compress thumbnail warn clean spell
 
 indent:
-	@latexindent -w $(DOC).tex
-	@latexindent $(DOC).bib > indent.tmp
-	@latexindent -w $wgu-cv.cls
+	@latexindent -w -s -k $(DOC).tex
+	@latexindent -w -s -k $(DOC).bib 
+	@latexindent -w -s -k wgu-cv.cls
 
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
