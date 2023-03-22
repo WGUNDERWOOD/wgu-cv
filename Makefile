@@ -6,7 +6,7 @@ all: indent latex todo compress thumbnail warn spell
 
 indent:
 	@latexindent -w -s -m $(DOC).tex
-	@latexindent -w -s -m $(DOC).bib 
+	@latexindent -w -s -m $(DOC).bib
 	@latexindent -w -s -m wgu-cv.cls
 
 latex:
