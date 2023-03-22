@@ -13,12 +13,10 @@
 %
 % wgu-cv: A clean and modern CV/resume template for TeX
 
-
 % Identify class
 % -------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{wgu-cv}[A clean and modern CV or resume template for TeX]
-
 
 % Require packages
 % -------------------------------------------------------------
@@ -45,7 +43,6 @@
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
-
 
 % Document settings
 % -------------------------------------------------------------
@@ -74,7 +71,6 @@
 % Clickable mailto links
 \newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
-
 % Document options
 % -------------------------------------------------------------
 % Add date to footer
@@ -90,7 +86,6 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 
 \ProcessOptions\relax
-
 
 % Header formatting
 % -------------------------------------------------------------

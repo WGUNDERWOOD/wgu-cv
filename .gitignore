@@ -10,3 +10,4 @@ README.html
 *.fdb_latexmk
 *.fls
 *.bak[0-9]*
+*.tmp
