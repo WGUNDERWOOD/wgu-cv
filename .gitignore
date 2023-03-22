@@ -9,3 +9,4 @@ README.html
 *.el
 *.fdb_latexmk
 *.fls
+*.bak[0-9]*
