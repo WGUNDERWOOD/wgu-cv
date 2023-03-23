@@ -5,6 +5,7 @@ all: indent latex todo compress thumbnail warn spell
 .PHONY: indent latex compress thumbnail warn clean spell
 
 indent:
+	@echo -e "\e[0;35m\033[1mIndenting...\e[0;30m\033[0m"
 	@latexindent -w -s -m $(DOC).tex
 	@latexindent -w -s -m $(DOC).bib
 	@latexindent -w -s -m wgu-cv.cls
