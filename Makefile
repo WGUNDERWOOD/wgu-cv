@@ -6,9 +6,9 @@ all: indent latex todo compress thumbnail warn spell
 
 indent:
 	@echo -e "\e[0;35m\033[1mIndenting...\e[0;30m\033[0m"
-	@latexindent -w -s -m $(DOC).tex
-	@latexindent -w -s -m $(DOC).bib
-	@latexindent -w -s -m wgu-cv.cls
+	@latexindent --overwrite --silent --modifylinebreaks $(DOC).tex
+	@latexindent --overwrite --silent --modifylinebreaks $(DOC).bib
+	@latexindent --overwrite --silent --modifylinebreaks wgu-cv.cls
 
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
