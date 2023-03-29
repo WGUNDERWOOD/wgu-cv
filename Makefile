@@ -1,8 +1,8 @@
 DOC = "WGUnderwood"
 
-all: indent latex todo compress thumbnail warn spell
+all: format latex todo compress thumbnail warn spell
 
-.PHONY: indent latex compress thumbnail warn clean spell
+.PHONY: format latex compress thumbnail warn clean spell
 
 format:
 	@echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
