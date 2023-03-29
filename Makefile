@@ -4,8 +4,8 @@ all: indent latex todo compress thumbnail warn spell
 
 .PHONY: indent latex compress thumbnail warn clean spell
 
-indent:
-	@echo -e "\e[0;35m\033[1mIndenting...\e[0;30m\033[0m"
+format:
+	@echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
 	@latexindent --overwrite --silent --modifylinebreaks $(DOC).tex
 	@latexindent --overwrite --silent --modifylinebreaks $(DOC).bib
 	@latexindent --overwrite --silent --modifylinebreaks wgu-cv.cls
