@@ -13,7 +13,7 @@ format:
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
 	@latexmk -rc-report- -pdflua -quiet $(DOC).tex | \
-		grep -v "Latexmk: Nothing to do for" || true
+		grep -v 'Latexmk: Nothing to do for' | grep '^.' || true
 
 compress:
 	@echo -e "\e[0;35m\033[1mCompressing PDF...\e[0;30m\033[0m"

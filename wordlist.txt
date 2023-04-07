@@ -1,36 +1,36 @@
 # whitelist
 Andreas
 Artemiou
+arXiv
+biostatistics
 Borel
 Casberd
 Cattaneo
 Charlton
 Cucuringu
 DyadicKDE
+eprint
 Feng
 Jeston
 Klusowski
 Kolmogorov
-MMath
 Masini
 Matias
 Mihai
+MMath
+motifcluster
+nonparametric
 ORF
 ORFE
 PCA
 Pereira
 Preprints
+primaryClass
 Sherrerd
 Smallman
 Springer
 WGUnderwood
 Yingjie
 Yurinskii's
-arXiv
-biostatistics
-eprint
-motifcluster
-nonparametric
-primaryClass
 
 # blacklist
