@@ -6,9 +6,9 @@ all: format latex todo compress thumbnail warn spell
 
 format:
 	@echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
-	@latexindent -wd -s -m $(DOC).tex
-	@latexindent -wd -s -m $(DOC).bib
-	@latexindent -wd -s -m wgu-cv.cls
+	@latexindent_fast $(DOC).tex
+	@latexindent_fast $(DOC).bib
+	@latexindent_fast wgu-cv.cls
 
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
