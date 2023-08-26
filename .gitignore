@@ -12,3 +12,4 @@ README.html
 *.bak[0-9]*
 *.sha256
 *.tmp
+*.bak

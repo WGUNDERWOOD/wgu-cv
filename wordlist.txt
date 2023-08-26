@@ -12,6 +12,7 @@ DyadicKDE
 eprint
 Feng
 Jeston
+Jianqing
 Klusowski
 Kolmogorov
 Masini
@@ -19,6 +20,7 @@ Matias
 Mihai
 MMath
 motifcluster
+MyTutor
 nonparametric
 ORF
 ORFE
