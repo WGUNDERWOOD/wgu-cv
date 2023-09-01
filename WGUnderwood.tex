@@ -30,8 +30,8 @@
 
 % Bibliography
 % -------------------------------------------------------------
-\renewcommand{\natexlab}[1]{}
-\nobibliography{WGUnderwood}
+%\renewcommand{\natexlab}[1]{}
+%\nobibliography{WGUnderwood}
 
 % Document settings
 % -------------------------------------------------------------
@@ -81,23 +81,51 @@
 
 % Publications
 % -------------------------------------------------------------
-\cvsection{PUBLICATIONS}
+\cvsection{RESEARCH AND PUBLICATIONS}
 
 \cvsubsection{Articles}{}{}
 \begin{itemize}
-  \item \bibentry{UnderwoodElliottCucuringu_2020_Motifs}.
-  \item \bibentry{SmallmanUnderwoodArtemiou_2019_SimplePoissonPCA}.
+
+  \item Motif-based spectral clustering of weighted directed networks,
+    with A.\ Elliott and M.\ Cucuringu. \\
+    \emph{Applied Network Science}, 5(62), September 2020.
+    \href{https://doi.org/10.1007/s41109-020-00293-z}{\texttt{doi:10.1007/s41109-020-00293-z}}%
+
+  \item Simple Poisson PCA: an algorithm for (sparse) feature extraction
+    with simultaneous dimension \\ determination,
+    with L.\ Smallman and A.\ Artemiou. \\
+    \emph{Computational Statistics}, 35:559--577, 2019.
+    \href{https://doi.org/10.1007/s00180-019-00903-0}{\texttt{doi:10.1007/s00180-019-00903-0}}%
+
 \end{itemize}
 
 \cvsubsection{Preprints}{}{}
 \begin{itemize}
-  \item \bibentry{CattaneoMasiniUnderwood_2022_Martingales}.
-  \item \bibentry{CattaneoFengUnderwood_2022_DyadicKDE_Preprint}.
+
+  \item Yurinskii's coupling for martingales,
+    with M.\ D.\ Cattaneo and R.\ P.\ Masini, \\
+    \emph{Annals of Statistics}, reject and resubmit, 2023.
+    \href{https://arxiv.org/abs/2210.00362}{\texttt{arXiv{:}{\allowbreak}2210.00362}}%
+
+  \item Uniform inference for kernel density estimators with dyadic data,
+    with M.\ D.\ Cattaneo and Y.\ Feng, \\
+    \emph{Journal of the American Statistical Association}, revise and resubmit,
+    2023.
+    \href{https://arxiv.org/abs/2201.05967}{\texttt{arXiv{:}{\allowbreak}2201.05967}}%
+
 \end{itemize}
 
-\cvsubsection{Working papers}{}{}
+\cvsubsection{Works in progress}{}{}
 \begin{itemize}
-  \item \bibentry{CattaneoKlusowskiUnderwood_2022_Forests}.
+
+  \item Inference with Mondrian random forests,
+    with M.\ D.\ Cattaneo and J.\ M.\ Klusowski.
+
+  \item Higher-order extensions to the Lindeberg method,
+    with M.\ D.\ Cattaneo and R.\ P.\ Masini.
+
+  \item Adaptive Mondrian random forests,
+    with M.\ D.\ Cattaneo, R.\ Chandak and J.\ M.\ Klusowski.
 \end{itemize}
 
 \cvsubsection{Presentations}{}{}
@@ -108,11 +136,19 @@
 
 \cvsubsection{Software}{}{}
 \begin{itemize}
-  \item \bibentry{Underwood_2022_DyadicKDE}.
-  \item \bibentry{UnderwoodElliott_2020_motifcluster}.
+
+  \item DyadicKDE: dyadic kernel density estimation in Julia, 2022.
+    GitHub:
+    \href{https://github.com/WGUNDERWOOD/DyadicKDE.jl}{\texttt{WGUNDERWOOD/DyadicKDE.jl}}%
+
+  \item motifcluster: motif-based spectral clustering of weighted directed networks
+    in R, Python and Julia, 2020.
+    GitHub:
+    \href{https://github.com/WGUNDERWOOD/motifcluster}{\texttt{WGUNDERWOOD/motifcluster}}%
+
 \end{itemize}
 
-\vspace*{-4mm}
+\pagebreak
 
 % Awards & Funding
 % -------------------------------------------------------------
@@ -228,26 +264,11 @@
 % -------------------------------------------------------------
 \cvsection{PEER REVIEW}
 
-Journal of the American Statistical Association,
 Econometric Theory,
+Journal of the American Statistical Association,
 Journal of Business and Economic Statistics,
+Journal of Causal Inference,
 Operations Research.
-
-% Technologies
-% -------------------------------------------------------------
-\cvsection{TECHNOLOGIES}
-
-Python,
-R,
-Julia,
-Latex,
-Git,
-Rust,
-Bash,
-Unix,
-Matlab,
-HTML,
-CSS.
 
 % References
 % -------------------------------------------------------------
@@ -264,7 +285,7 @@ CSS.
     Princeton University
 
   \item
-    Jason M.\ Klusowski
+    Jason M.\ Klusowski,
     Assistant Professor,
     ORFE,
     Princeton University

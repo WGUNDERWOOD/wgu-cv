@@ -31,7 +31,6 @@ thumbnail:
 warn: latex
 	@echo -e "\e[0;35m\033[1mChecking for warnings...\e[0;30m\033[0m"
 	@tex_log_parse $(DOC).log
-	@tex_log_parse $(DOC).blg
 
 spell:
 	@echo -e "\e[0;35m\033[1mChecking spelling...\e[0;30m\033[0m"

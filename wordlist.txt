@@ -6,6 +6,7 @@ biostatistics
 Borel
 Casberd
 Cattaneo
+Chandak
 Charlton
 Cucuringu
 DyadicKDE
@@ -13,8 +14,10 @@ eprint
 Feng
 Jeston
 Jianqing
+jl
 Klusowski
 Kolmogorov
+Lindeberg
 Masini
 Matias
 Mihai
