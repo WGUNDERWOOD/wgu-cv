@@ -6,9 +6,9 @@ all: format latex todo compress thumbnail warn spell
 
 format:
 	@echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
-	@latexindent_fast $(DOC).tex
-	@latexindent_fast $(DOC).bib
-	@latexindent_fast wgu-cv.cls
+	@latexindent-fast $(DOC).tex
+	@latexindent-fast $(DOC).bib
+	@latexindent-fast wgu-cv.cls
 
 latex:
 	@echo -e "\e[0;35m\033[1mBuilding with lualatex...\e[0;30m\033[0m"
@@ -17,8 +17,8 @@ latex:
 
 compress:
 	@echo -e "\e[0;35m\033[1mCompressing PDF...\e[0;30m\033[0m"
-	@optpdf $(DOC).pdf | grep -v "didn't make smaller" || true
-	@optpdf $(DOC).pdf | grep -v "didn't make smaller" || true
+	@compress-pdf $(DOC).pdf
+	@compress-pdf $(DOC).pdf
 
 thumbnail:
 	@echo -e "\e[0;35m\033[1mBuilding thumbnail...\e[0;30m\033[0m"
@@ -30,21 +30,21 @@ thumbnail:
 
 warn: latex
 	@echo -e "\e[0;35m\033[1mChecking for warnings...\e[0;30m\033[0m"
-	@tex_log_parse $(DOC).log
+	@tex-check $(DOC).log
 
 spell:
 	@echo -e "\e[0;35m\033[1mChecking spelling...\e[0;30m\033[0m"
-	@spell_check $(DOC).tex
-	@spell_check $(DOC).bib
+	@spell-check $(DOC).tex
+	@spell-check $(DOC).bib
 
 todo:
 	@echo -e "\e[0;35m\033[1mChecking for todos...\e[0;30m\033[0m"
-	@todo_finder $(DOC).tex
-	@todo_finder $(DOC).bib
-	@todo_finder README.md
-	@todo_finder wgu-cv.cls
+	@todo-finder $(DOC).tex
+	@todo-finder $(DOC).bib
+	@todo-finder README.md
+	@todo-finder wgu-cv.cls
 
 clean:
-	@texclean
+	@tex-clean
 	@rm -f *.html
 	@rm -f *.bak[0-9]*

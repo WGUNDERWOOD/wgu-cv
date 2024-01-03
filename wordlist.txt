@@ -1,4 +1,4 @@
-# whitelist
+# accept
 Andreas
 Artemiou
 arXiv
@@ -41,4 +41,4 @@ WGUnderwood
 Yingjie
 Yurinskii's
 
-# blacklist
+# reject
