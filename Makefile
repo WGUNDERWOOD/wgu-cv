@@ -18,7 +18,6 @@ latex:
 compress:
 	@echo -e "\e[0;35m\033[1mCompressing PDF...\e[0;30m\033[0m"
 	@compress-pdf $(DOC).pdf
-	@compress-pdf $(DOC).pdf
 
 thumbnail:
 	@echo -e "\e[0;35m\033[1mBuilding thumbnail...\e[0;30m\033[0m"
