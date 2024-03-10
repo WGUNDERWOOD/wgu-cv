@@ -1,12 +1,20 @@
 doc := "WGUnderwood"
 
-all: format todo warn spell longlines latex thumbnail compress
+all: format todo warn spell longlines build thumbnail compress
+
+alias c := clean
+alias f := format
+alias t := todo
+alias w := warn
+alias s := spell
+alias l := longlines
+alias b := build
 
 format:
     @echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
-    @latexindent-fast {{doc}}.tex {{doc}}.bib wgu-cv.cls
+    @tex-fmt {{doc}}.tex # TODO {{doc}}.bib wgu-cv.cls
 
-latex:
+build:
     @echo -e "\e[0;35m\033[1mBuilding...\e[0;30m\033[0m"
     @latexmk -rc-report- -pdflua -quiet {{doc}}.tex | \
         grep -v 'Latexmk: Nothing to do for' | grep '^.' || true
@@ -23,10 +31,9 @@ thumbnail:
     @pngquant temp.png -Q 0-10 -f -o thumbnail.png
     @rm -f temp*.png
 
-warn: latex
+warn:
     @echo -e "\e[0;35m\033[1mWarnings...\e[0;30m\033[0m"
     @tex-check {{doc}}.log
-
 
 longlines:
     @echo -e "\e[0;35m\033[1mLong lines...\e[0;30m\033[0m"
@@ -38,7 +45,7 @@ spell:
 
 todo:
     @echo -e "\e[0;35m\033[1mTodos...\e[0;30m\033[0m"
-    @todo-finder {{doc}}.tex {{doc}}.bib README.md wgu-cv.cls
+    @todo-finder {{doc}}.tex {{doc}}.bib README.md wgu-cv.cls justfile
 
 clean:
     @tex-clean
