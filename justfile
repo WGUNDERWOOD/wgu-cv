@@ -12,7 +12,7 @@ alias b := build
 
 format:
     @echo -e "\e[0;35m\033[1mFormatting...\e[0;30m\033[0m"
-    @tex-fmt {{doc}}.tex # TODO {{doc}}.bib wgu-cv.cls
+    @tex-fmt {{doc}}.tex {{doc}}.bib wgu-cv.cls
 
 build:
     @echo -e "\e[0;35m\033[1mBuilding...\e[0;30m\033[0m"
