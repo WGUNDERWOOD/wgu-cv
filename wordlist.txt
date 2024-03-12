@@ -38,7 +38,7 @@ Sherrerd
 Smallman
 SML
 Springer
-WGUnderwood
+wgunderwood
 Yingjie
 Yurinskii's
 

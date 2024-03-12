@@ -1,103 +1,59 @@
-% wgu-cv.cls
-% -------------------------------------------------------------
-% This class is from
-% https://github.com/WGUNDERWOOD/wgu-cv
-%
-% Author:
-% William G Underwood
-% https://github.com/WGUNDERWOOD
-%
-% Requirements:
-% LuaLaTeX
-% BibTeX
-%
-% wgu-cv: A clean and modern CV/resume template for TeX
+%! TeX root = WGUnderwood.tex
 
-% Identify class
-% -------------------------------------------------------------
+% class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wgu-cv}[A clean and modern CV or resume template for TeX]
+\ProvidesClass{wgu-cv}
 
-% Require packages
-% -------------------------------------------------------------
+% packages
 \LoadClass[10pt]{article}
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{fontspec}
-\RequirePackage{babel}
 \RequirePackage{microtype}
-\RequirePackage{natbib}
-\RequirePackage{bibentry}
-\RequirePackage{titlesec}
 \RequirePackage{fancyhdr}
 \RequirePackage{enumitem}
 \RequirePackage{ifthen}
-\RequirePackage{multicol}
-\RequirePackage{needspace}
-\RequirePackage[default]{cantarell}
-\RequirePackage{sourcecodepro}
 
-% Define variables
-% -------------------------------------------------------------
+% variables
 \def\yourname#1{\def\@yourname{#1}}
 \def\youraddress#1{\def\@youraddress{#1}}
 \def\youremail#1{\def\@youremail{#1}}
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
 
-% Document settings
-% -------------------------------------------------------------
-% Page size
-\geometry{letterpaper}
-%\geometry{a4paper}
-
-% No indents
+% settings
+\setmainfont{Libre Baskerville}[Scale=0.9]
+\setmonofont{Source Code Pro}
+\geometry{a4paper}
 \setlength\parindent{0pt}
-
-% Bibliography style in-line
 \bibliographystyle{abbrvnat}
-
-% Enable footer
 \pagestyle{fancy}
-
-% No header
 \renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage}
+\rfoot{\today}
+\setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=6pt, after=\vspace*{0cm}}
 
-% Clear footer
-\cfoot{}
+% arxiv
+\newcommand{\arxiv}[1]{%
+  \href{https://arxiv.org/abs/#1}{%
+  \texttt{arXiv{:}{\allowbreak}#1}}%
+}
 
-% Format lists
-\setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=6pt, after=\vspace*{0.2cm}}
+% github
+\newcommand{\github}[1]{%
+  GitHub: \href{https://github.com/#1}{%
+  \texttt{#1}}%
+}
 
-% Clickable mailto links
-\newcommand{\cvlink}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
-
-% Document options
-% -------------------------------------------------------------
-% Add date to footer
-\DeclareOption{date}{\rfoot{\today}}
-
-% Page numbering
-\DeclareOption{number}{\cfoot{\thepage}}
-
-% Do not require unique bib entries
-\providecommand{\nop}[1]{}
-
-% Pass other options to class
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-
-\ProcessOptions\relax
-
-% Header formatting
-% -------------------------------------------------------------
-% Format title
+% title
 \renewcommand{\maketitle}{%
-  \vspace*{-1.8cm}%
+  \vspace*{-1.7cm}%
   \begin{center}%
     \begin{huge}%
-      \MakeUppercase{\@yourname} \\
+      \@yourname \\
     \end{huge}%
-    \vspace{0.3cm}%
+    \vspace{0.5cm}%
     \@youraddress \\
+    \vspace{0.1cm}%
     \begin{minipage}{0.45\textwidth}%
       \centering%
       \href{mailto:\@youremail}{\nolinkurl{\@youremail}}%
@@ -106,25 +62,26 @@
       \centering%
       \href{https://\@yourwebsite}{\nolinkurl{\@yourwebsite}}%
     \end{minipage}
+    \vspace{0.3cm}%
   \end{center}%
 }
 
-% Format section headers
+% section
 \newcommand{\cvsection}[1]{%
-  \vspace{0.4cm}%
   \par\hbox{\large\textbf{#1}\strut}%
-  \vspace{-8pt}%
-  \rule{\textwidth}{1.5pt}%
+  \vspace{-7pt}%
+  \rule{\textwidth}{0.8pt}%
   \vspace*{0.2cm}%
 }
 
-% Format subsection headers
-\newcommand{\cvsubsection}[3]{%
+% subsection
+\newcommand{\cvsubsection}[2]{%
   \textbf{#1}%
-  \hfill\textbf{#3}%
-  \ifthenelse{%
-    \equal{#2}{}%
-  }%
-  {}%
-  {\\ \textbf{#2}}%
+  \hfill\textbf{#2}%
+}
+
+% subsubsection
+\newcommand{\cvsubsubsection}[1]{%
+  \\%
+  \textit{#1}%
 }

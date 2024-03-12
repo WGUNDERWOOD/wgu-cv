@@ -1,18 +1,10 @@
 % !TeX program = lualatex
 
-% Use wgu-cv class
-% -------------------------------------------------------------
-\documentclass[
-  date,
-  number,
-]{wgu-cv}
+\documentclass{wgu-cv}
 
-% Personal details
-% -------------------------------------------------------------
-\yourname{William\, G\, Underwood}
+\yourname{William G Underwood}
 \youraddress{
   ORFE Department,
-  Princeton University,
   Sherrerd Hall,
   Charlton Street,
   Princeton,
@@ -22,28 +14,16 @@
 \youremail{wgu2@princeton.edu}
 \yourwebsite{wgunderwood.github.io}
 
-% Begin document
-% -------------------------------------------------------------
 \begin{document}
 
 \maketitle
 
-% Bibliography
-% -------------------------------------------------------------
-%\renewcommand{\natexlab}[1]{}
-%\nobibliography{WGUnderwood}
-
-% Document settings
-% -------------------------------------------------------------
-\setlength{\emergencystretch}{2pt}
-
-% Education
-% -------------------------------------------------------------
-\cvsection{EDUCATION}
+% employment
+\cvsection{Employment}
 
 \cvsubsection{Postdoctoral Research Associate in Statistics}
-{University of Cambridge}
 {July 2024 -- July 2026}
+\cvsubsubsection{University of Cambridge}
 
 \begin{itemize}
   \item Advisor:
@@ -51,158 +31,9 @@
     and Mathematical Statistics.
 \end{itemize}
 
-\cvsubsection{PhD in Operations Research \& Financial Engineering}
-{Princeton University}
-{Sep 2019 -- May 2024}
-
-\begin{itemize}
-  \item Dissertation:
-    Estimation and Inference in Modern Nonparametric Statistics.
-  \item Advisor:
-    Matias Cattaneo, Department of Operations Research \& Financial Engineering.
-\end{itemize}
-
-\cvsubsection{MA in Operations Research \& Financial Engineering}
-{Princeton University}
-{Sep 2019 -- Sep 2021}
-
-\bigskip
-
-\cvsubsection{MMath in Mathematics \& Statistics}
-{University of Oxford}
-{Oct 2015 -- Jun 2019}
-
-\begin{itemize}
-  \item Dissertation:
-    Motif-Based Spectral Clustering of Weighted Directed Networks.
-  \item Supervisor:
-    Mihai Cucuringu,
-    Department of Statistics.
-\end{itemize}
-
-\vspace*{-4mm}
-
-% Publications
-% -------------------------------------------------------------
-\cvsection{RESEARCH AND PUBLICATIONS}
-
-\cvsubsection{Articles}{}{}
-\begin{itemize}
-
-  \item Uniform inference for kernel density estimators with dyadic data,
-    with M.\ D.\ Cattaneo and Y.\ Feng. \\
-    \emph{Journal of the American Statistical Association}, forthcoming,
-    2024.
-    \href{https://arxiv.org/abs/2201.05967}{%
-    \texttt{arXiv{:}{\allowbreak}2201.05967}}%
-
-  \item Motif-based spectral clustering of weighted directed networks,
-    with A.\ Elliott and M.\ Cucuringu. \\
-    \emph{Applied Network Science}, 5(62), 2020.
-    \href{https://doi.org/10.1007/s41109-020-00293-z}{%
-    \texttt{doi:10.1007/s41109-020-00293-z}}%
-
-  \item Simple Poisson PCA: an algorithm for (sparse) feature extraction
-    with simultaneous dimension \\ determination,
-    with L.\ Smallman and A.\ Artemiou. \\
-    \emph{Computational Statistics}, 35:559--577, 2019.
-    \href{https://doi.org/10.1007/s00180-019-00903-0}{%
-    \texttt{doi:10.1007/s00180-019-00903-0}}%
-
-\end{itemize}
-
-\cvsubsection{Preprints}{}{}
-\begin{itemize}
-
-  \item Inference with Mondrian random forests,
-    with M.\ D.\ Cattaneo and J.\ M.\ Klusowski.
-    \href{https://arxiv.org/abs/2310.09702}{%
-    \texttt{arXiv{:}{\allowbreak}2310.09702}}%
-
-  \item Yurinskii's coupling for martingales,
-    with M.\ D.\ Cattaneo and R.\ P.\ Masini. \\
-    \emph{Annals of Statistics}, reject and resubmit, 2023.
-    \href{https://arxiv.org/abs/2210.00362}{%
-    \texttt{arXiv{:}{\allowbreak}2210.00362}}%
-
-\end{itemize}
-
-\cvsubsection{Works in progress}{}{}
-\begin{itemize}
-
-  \item Higher-order extensions to the Lindeberg method,
-    with M.\ D.\ Cattaneo and R.\ P.\ Masini
-
-  \item Adaptive Mondrian random forests,
-    with M.\ D.\ Cattaneo, R.\ Chandak and J.\ M.\ Klusowski
-\end{itemize}
-
-\cvsubsection{Presentations}{}{}
-\begin{itemize}
-  \item Two Sigma PhD Poster Session, Two Sigma Investments, July 2023
-  \item Two Sigma PhD Research Symposium, Two Sigma Investments, June 2022
-  \item Princeton Statistics Laboratory, Princeton University, September 2021
-\end{itemize}
-
-\pagebreak
-
-\cvsubsection{Software}{}{}
-\begin{itemize}
-
-  \item MondrianForests: Mondrian random forests in Julia, 2023. \\
-    GitHub:
-    \href{https://github.com/WGUNDERWOOD/MondrianForests.jl}{%
-    \texttt{WGUNDERWOOD/MondrianForests.jl}}%
-
-  \item DyadicKDE: dyadic kernel density estimation in Julia, 2022.
-    GitHub:
-    \href{https://github.com/WGUNDERWOOD/DyadicKDE.jl}{%
-    \texttt{WGUNDERWOOD/DyadicKDE.jl}}%
-
-  \item motifcluster: motif-based spectral clustering
-    of weighted directed networks in R, Python and Julia, 2020.
-    GitHub:
-    \href{https://github.com/WGUNDERWOOD/motifcluster}{%
-    \texttt{WGUNDERWOOD/motifcluster}}%
-
-\end{itemize}
-
-% Awards & Funding
-% -------------------------------------------------------------
-\cvsection{AWARDS \& FUNDING}
-
-\vspace*{-2mm}
-
-\begin{itemize}
-  \item School of Engineering and Applied Science Award for Excellence,
-    Princeton University
-    \hfill 2022%
-  \item Francis Robbins Upton Fellowship in Engineering,
-    Princeton University
-    \hfill 2019%
-  \item Royal Statistical Society Prize,
-    Royal Statistical Society \& University of Oxford
-    \hfill 2019%
-  \item Gibbs Statistics Prize,
-    University of Oxford
-    \hfill 2019%
-  \item James Fund for Mathematics Research Grant,
-    St John's College, University of Oxford
-    \hfill 2017%
-  \item Casberd Scholarship,
-    St John's College, University of Oxford
-    \hfill 2016%
-\end{itemize}
-
-\vspace*{-4mm}
-
-% Professional experience
-% -------------------------------------------------------------
-\cvsection{PROFESSIONAL EXPERIENCE}
-
-\cvsubsection{Assistant in Instruction, Princeton University}
-{}
+\cvsubsection{Assistant in Instruction}
 {Sep 2020 -- May 2024}
+\cvsubsubsection{Princeton University}
 
 \begin{itemize}
 
@@ -253,52 +84,190 @@
 
 \end{itemize}
 
-\cvsubsection{Quantitative Research Intern, Two Sigma Investments}
-{}
+\vspace*{1mm}
+
+% education
+\cvsection{Education}
+
+\cvsubsection{PhD in Operations Research \& Financial Engineering}
+{Sep 2019 -- May 2024}
+\cvsubsubsection{Princeton University}
+
+\begin{itemize}
+  \item Dissertation:
+    Estimation and Inference in Modern Nonparametric Statistics.
+  \item Advisor:
+    Matias Cattaneo, Department of Operations Research \& Financial Engineering.
+\end{itemize}
+
+\cvsubsection{MA in Operations Research \& Financial Engineering}
+{Sep 2019 -- Sep 2021}
+\cvsubsubsection{Princeton University}
+
+\bigskip
+
+\cvsubsection{MMath in Mathematics \& Statistics}
+{Oct 2015 -- Jun 2019}
+\cvsubsubsection{University of Oxford}
+
+\begin{itemize}
+  \item Dissertation:
+    Motif-Based Spectral Clustering of Weighted Directed Networks.
+  \item Supervisor:
+    Mihai Cucuringu,
+    Department of Statistics.
+\end{itemize}
+
+% publications
+\cvsection{Research \& publications}
+
+\cvsubsection{Articles}{}
+\begin{itemize}
+
+  \item Uniform inference for kernel density estimators with dyadic data,
+    with M.\ D.\ Cattaneo and Y.\ Feng.
+    \emph{Journal of the American Statistical Association}, forthcoming, 2024.
+    \arxiv{2201.05967}.
+
+  \item Motif-based spectral clustering of weighted directed networks,
+    with A.\ Elliott and M.\ Cucuringu.
+    \emph{Applied Network Science}, 5(62), 2020.
+    \arxiv{2004.01293}.
+
+  \item Simple Poisson PCA: an algorithm for (sparse) feature extraction
+    with simultaneous dimension determination,
+    with L.\ Smallman and A.\ Artemiou.
+    \emph{Computational Statistics}, 35:559--577, 2019.
+
+\end{itemize}
+
+\cvsubsection{Preprints}{}
+\begin{itemize}
+
+  \item Inference with Mondrian random forests,
+    with M.\ D.\ Cattaneo and J.\ M.\ Klusowski, 2023. \\
+    \arxiv{2310.09702}.
+
+  \item Yurinskii's coupling for martingales,
+    with M.\ D.\ Cattaneo and R.\ P.\ Masini.
+    \emph{Annals of Statistics}, reject and resubmit, 2023.
+    \arxiv{2210.00362}.
+
+\end{itemize}
+
+\pagebreak
+
+\cvsubsection{Works in progress}{}
+\begin{itemize}
+
+  \item Higher-order extensions to the Lindeberg method,
+    with M.\ D.\ Cattaneo and R.\ P.\ Masini.
+
+  \item Adaptive Mondrian random forests,
+    with M.\ D.\ Cattaneo, R.\ Chandak and J.\ M.\ Klusowski.
+\end{itemize}
+
+\cvsubsection{Presentations}{}
+\begin{itemize}
+
+  \item Statistics Seminar, University of Pittsburgh, February 2024
+  \item Statistics Seminar, University of Illinois, January 2024
+  \item Statistics Seminar, University of Michigan, January 2024
+  \item PhD Poster Session, Two Sigma Investments, July 2023
+  \item Research Symposium, Two Sigma Investments, June 2022
+  \item Princeton Statistics Laboratory, Princeton University, September 2021
+\end{itemize}
+
+\cvsubsection{Software}{}
+\begin{itemize}
+
+  \item MondrianForests: Mondrian random forests in Julia, 2023. \\
+    \github{wgunderwood/MondrianForests.jl}
+
+  \item DyadicKDE: dyadic kernel density estimation in Julia, 2022. \\
+    \github{wgunderwood/DyadicKDE.jl}
+
+  \item motifcluster: motif-based spectral clustering
+    in R, Python and Julia, 2020. \\
+    \github{wgunderwood/motifcluster}
+
+\end{itemize}
+
+\vspace*{2mm}
+
+% awards & funding
+\cvsection{Awards \& funding}
+\vspace*{-6mm}
+
+\begin{itemize}
+  \item School of Engineering and Applied Science Award for Excellence,
+    Princeton University
+    \hfill 2022%
+  \item Francis Robbins Upton Fellowship in Engineering,
+    Princeton University
+    \hfill 2019%
+  \item Royal Statistical Society Prize,
+    Royal Statistical Society \& University of Oxford
+    \hfill 2019%
+  \item Gibbs Statistics Prize,
+    University of Oxford
+    \hfill 2019%
+  \item James Fund for Mathematics Research Grant,
+    St John's College, University of Oxford
+    \hfill 2017%
+  \item Casberd Scholarship,
+    St John's College, University of Oxford
+    \hfill 2016%
+\end{itemize}
+
+\vspace*{1mm}
+
+% professional experience
+\cvsection{Professional experience}
+
+\cvsubsection{Quantitative Research Intern,\,
+\normalfont\emph{Two Sigma Investments}}
 {Jun 2023 -- Aug 2023}
-\vspace*{2mm}
+\vspace*{1mm}
 
-\cvsubsection{Machine Learning Consultant, Mercury Digital Assets}
-{}
+\cvsubsection{Machine Learning Consultant,\,
+\normalfont\emph{Mercury Digital Assets}}
 {Oct 2018 -- Nov 2018}
-\vspace*{2mm}
+\vspace*{1mm}
 
-\cvsubsection{Educational Consultant, Polaris \& Dawn}
-{}
+\cvsubsection{Educational Consultant,\, \normalfont\emph{Polaris \& Dawn}}
 {Feb 2018 -- Sep 2018}
-\vspace*{2mm}
+\vspace*{1mm}
 
-\cvsubsection{Premium Tutor, MyTutor}
-{}
+\cvsubsection{Premium Tutor,\, \normalfont\emph{MyTutor}}
 {Feb 2016 -- Oct 2018}
-\vspace*{2mm}
+\vspace*{1mm}
 
-\cvsubsection{Statistics and Machine Learning Research Intern,
-Cardiff University}
-{}
+\cvsubsection{Statistics \& Machine Learning Research Intern,\,
+\normalfont\emph{Cardiff University}}
 {Aug 2017 -- Sep 2017}
+\vspace*{1mm}
+
+\cvsubsection{Data Science Intern,\, \normalfont\emph{Rolls--Royce}}
+{Jun 2017 -- Aug 2017}
 \vspace*{2mm}
 
-\cvsubsection{Data Science Intern, Rolls-Royce}
-{}
-{Jun 2017 -- Aug 2017}
+% peer review
+\cvsubsection{Peer review}{}
 
-% Peer review
-% -------------------------------------------------------------
-\cvsection{PEER REVIEW}
+\emph{Econometric Theory,
+  Journal of the American Statistical Association,
+  Journal of Business \& Economic Statistics,
+  Journal of Causal Inference,
+  Journal of Econometrics,
+Operations Research.}
 
-Econometric Theory,
-Journal of the American Statistical Association,
-Journal of Business and Economic Statistics,
-Journal of Causal Inference,
-Journal of Econometrics,
-Operations Research.
+\vspace*{3mm}
 
-% References
-% -------------------------------------------------------------
-\cvsection{REFERENCES}
+% references
+\cvsection{References}
 
-\vspace*{-2mm}
+\vspace*{-3mm}
 
 \begin{itemize}
 
@@ -320,22 +289,6 @@ Operations Research.
     ORFE,
     Princeton University
 
-  \item
-    Ricardo P.\ Masini,
-    Assistant Professor,
-    Statistics,
-    University of California, Davis
-
 \end{itemize}
 
-% End document
-% -------------------------------------------------------------
-
 \end{document}
-
-% Local variables for AucTeX
-% -------------------------------------------------------------
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-engine: luatex
-%%% End:
