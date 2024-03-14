@@ -21,7 +21,7 @@
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
 
 % settings
-\setmainfont{Libre Baskerville}[Scale=0.9]
+\setmainfont{Libre Baskerville}[Scale=0.93]
 \setmonofont{Source Code Pro}
 \geometry{a4paper}
 \setlength\parindent{0pt}
@@ -53,7 +53,7 @@
     \end{huge}%
     \vspace{0.5cm}%
     \@youraddress \\
-    \vspace{0.1cm}%
+    \vspace{0.2cm}%
     \begin{minipage}{0.45\textwidth}%
       \centering%
       \href{mailto:\@youremail}{\nolinkurl{\@youremail}}%

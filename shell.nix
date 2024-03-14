@@ -17,6 +17,8 @@ in pkgs.mkShell {
     buildInputs = [
         pkgs.imagemagick
         pkgs.just
+        pkgs.libre-baskerville
+        pkgs.source-code-pro
         pkgs.pngquant
         pkgs.poppler_utils
         pkgs.texlive.combined.scheme-full
