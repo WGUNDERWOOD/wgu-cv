@@ -21,8 +21,8 @@
 \def\yourwebsite#1{\def\@yourwebsite{#1}}
 
 % settings
-\setmainfont{Libre Baskerville}[Scale=0.93]
-\setmonofont{Source Code Pro}
+\setmainfont{Libre Baskerville}[Scale=0.9]
+\setmonofont{Source Code Pro}[Scale=0.97]
 \geometry{a4paper}
 \setlength\parindent{0pt}
 \bibliographystyle{abbrvnat}
@@ -53,7 +53,7 @@
     \end{huge}%
     \vspace{0.5cm}%
     \@youraddress \\
-    \vspace{0.2cm}%
+    \vspace{0.16cm}%
     \begin{minipage}{0.45\textwidth}%
       \centering%
       \href{mailto:\@youremail}{\nolinkurl{\@youremail}}%
@@ -77,7 +77,7 @@
 % subsection
 \newcommand{\cvsubsection}[2]{%
   \textbf{#1}%
-  \hfill\textbf{#2}%
+  \hfill{#2}%
 }
 
 % subsubsection
