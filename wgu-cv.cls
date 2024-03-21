@@ -6,7 +6,7 @@
 
 % packages
 \LoadClass[10pt]{article}
-\RequirePackage[margin=1in]{geometry}
+\RequirePackage[margin=1in,top=0.9in]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
@@ -30,7 +30,14 @@
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{\thepage}
 \rfoot{\today}
-\setlist{leftmargin=0.5cm, itemsep=-0.2em, topsep=6pt, after=\vspace*{0cm}}
+\setlist{
+  leftmargin=0.5cm,
+  topsep=0cm,
+  partopsep=0cm,
+  parsep=-0.04cm, % item spacing
+  before=\vspace{0.12cm},
+  after=\vspace{0.08cm},
+}
 
 % arxiv
 \newcommand{\arxiv}[1]{%
@@ -46,7 +53,7 @@
 
 % title
 \renewcommand{\maketitle}{%
-  \vspace*{-1.7cm}%
+  \vspace*{-1.2cm}%
   \begin{center}%
     \begin{huge}%
       \@yourname \\
@@ -62,26 +69,29 @@
       \centering%
       \href{https://\@yourwebsite}{\nolinkurl{\@yourwebsite}}%
     \end{minipage}
-    \vspace{0.3cm}%
   \end{center}%
 }
 
 % section
 \newcommand{\cvsection}[1]{%
+  \vspace{0.3cm}%
   \par\hbox{\large\textbf{#1}\strut}%
-  \vspace{-7pt}%
+  \vspace{-0.25cm}%
   \rule{\textwidth}{0.8pt}%
-  \vspace*{0.2cm}%
+  \vspace{-0.15cm}%
 }
 
 % subsection
 \newcommand{\cvsubsection}[2]{%
+  \vspace{0.30cm}%
   \textbf{#1}%
   \hfill{#2}%
+  \vspace{0.03cm}%
 }
 
 % subsubsection
 \newcommand{\cvsubsubsection}[1]{%
-  \\%
+  \linebreak
   \textit{#1}%
+  \vspace{0.05cm}%
 }

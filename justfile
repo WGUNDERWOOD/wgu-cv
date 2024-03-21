@@ -18,6 +18,9 @@ build:
 
 compress:
     @compress-pdf {{doc}}.pdf
+    @compress-pdf {{doc}}.pdf
+    @compress-pdf {{doc}}.pdf
+    @compress-pdf {{doc}}.pdf
 
 thumbnail:
     @pdftoppm -png -hide-annotations -scale-to 800 {{doc}}.pdf temp
@@ -33,7 +36,7 @@ longlines:
     @long-lines {{doc}}.tex {{doc}}.bib justfile
 
 spell:
-    @spell-check {{doc}}.tex {{doc}}.bib
+    @spell-check -b {{doc}}.tex {{doc}}.bib
 
 todo:
     @todo-finder {{doc}}.tex {{doc}}.bib README.md wgu-cv.cls justfile
