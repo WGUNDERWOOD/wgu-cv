@@ -2,7 +2,7 @@ let
 pkgs = import <nixpkgs> { };
 dotfiles = builtins.fetchGit {
     url = "https://github.com/WGUNDERWOOD/dotfiles";
-    rev = "c45aa4e8452c36fb1321bbff4172446160ca7c77";
+    rev = "730df76dcf73cf62dde993eb89256e665bc1fd10";
 };
 programs = "${dotfiles}/programs/";
 compress-pdf = pkgs.callPackage "${programs}/compress-pdf/compress-pdf.nix" {};
