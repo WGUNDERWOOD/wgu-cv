@@ -73,7 +73,7 @@
 }
 
 % section
-\newcommand{\cvsection}[1]{%
+\renewcommand{\section}[1]{%
   \vspace{0.3cm}%
   \par\hbox{\large\textbf{#1}\strut}%
   \vspace{-0.25cm}%
@@ -82,7 +82,7 @@
 }
 
 % subsection
-\newcommand{\cvsubsection}[2]{%
+\renewcommand{\subsection}[2]{%
   \vspace{0.30cm}%
   \textbf{#1}%
   \hfill{#2}%
@@ -90,7 +90,7 @@
 }
 
 % subsubsection
-\newcommand{\cvsubsubsection}[1]{%
+\renewcommand{\subsubsection}[1]{%
   \linebreak
   \textit{#1}%
   \vspace{0.05cm}%

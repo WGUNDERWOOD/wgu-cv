@@ -20,11 +20,9 @@ My current CV, built with a custom TeX template.
 - The template is given by the LaTeX class [wgu-cv.cls]
 
 ### Dependencies
-- Compilation requires [LuaLaTeX]
 - A full list of required packages is given in [wgu-cv.cls]
 
 [WGUnderwood.pdf]: ./WGUnderwood.pdf
 [WGUnderwood.tex]: ./WGUnderwood.tex
 [WGUnderwood.bib]: ./WGUnderwood.bib
 [wgu-cv.cls]: ./wgu-cv.cls
-[LuaLaTeX]: http://www.luatex.org
