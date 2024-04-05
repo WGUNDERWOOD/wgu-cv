@@ -30,12 +30,11 @@
           src = self;
           buildInputs = [
             pkgs.coreutils
-            pkgs.texlive.combined.scheme-full
             pkgs.just
             pkgs.bash
             pkgs.gnugrep
             pkgs.libre-baskerville
-            #pkgs.source-code-pro
+            pkgs.source-code-pro
             pkgs.pngquant
             pkgs.poppler_utils
             pkgs.imagemagick
