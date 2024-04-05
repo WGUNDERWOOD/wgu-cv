@@ -14,7 +14,7 @@ format:
     @tex-fmt {{doc}}.tex {{doc}}.bib wgu-cv.cls
 
 build:
-    @tex-build -x {{doc}}.tex
+    @tex-build -l {{doc}}.tex
 
 compress:
     @compress-pdf {{doc}}.pdf

@@ -20,9 +20,10 @@ My current CV, built with a custom TeX template.
 - The template is given by the LaTeX class [wgu-cv.cls]
 
 ### Dependencies
-- A full list of required packages is given in [wgu-cv.cls]
+- A full list of required packages is given in [flake.nix].
 
 [WGUnderwood.pdf]: ./WGUnderwood.pdf
 [WGUnderwood.tex]: ./WGUnderwood.tex
+[flake.nix]: ./flake.nix
 [WGUnderwood.bib]: ./WGUnderwood.bib
 [wgu-cv.cls]: ./wgu-cv.cls
