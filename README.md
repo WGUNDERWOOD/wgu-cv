@@ -8,8 +8,7 @@ width=300 />
 
 # wgu-cv
 
-[![CI](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/flake.yml/
-badge.svg)](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/flake.yml)
+[![CI](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/flake.yml/badge.svg)](https://github.com/WGUNDERWOOD/wgu-cv/actions/workflows/flake.yml)
 
 My current CV, built with a custom TeX template.
 
