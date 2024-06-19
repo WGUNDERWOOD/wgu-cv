@@ -1,7 +1,7 @@
 {
   description = "CV";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-23.11;
+    nixpkgs.url = github:NixOS/nixpkgs/nixos-24.05;
     flake-utils.url = github:numtide/flake-utils;
     dotfiles.url = git+https://github.com/wgunderwood/dotfiles?rev=293530054ada04afe2783253ade9e36c68f545b1;
   };
