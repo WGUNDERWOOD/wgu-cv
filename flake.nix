@@ -3,7 +3,7 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixos-24.05;
     flake-utils.url = github:numtide/flake-utils;
-    dotfiles.url = git+https://github.com/wgunderwood/dotfiles?rev=293530054ada04afe2783253ade9e36c68f545b1;
+    dotfiles.url = github:wgunderwood/dotfiles;
   };
   outputs = {
     self,
@@ -20,7 +20,7 @@
       tex-build = pkgs.callPackage "${programs}/tex-build/tex-build.nix" {};
       tex-check = pkgs.callPackage "${programs}/tex-check/tex-check.nix" {};
       tex-clean = pkgs.callPackage "${programs}/tex-clean/tex-clean.nix" {};
-      tex-fmt = pkgs.callPackage "${programs}/tex-fmt/tex-fmt.nix" {};
+      tex-fmt = pkgs.callPackage "${programs}/tex-fmt.nix" {};
       todo-finder = pkgs.callPackage "${programs}/todo-finder/todo-finder.nix" {};
       aspell = pkgs.aspellWithDicts (d: [d.en]);
     in rec {
