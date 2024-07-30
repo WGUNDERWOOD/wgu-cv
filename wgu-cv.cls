@@ -7,6 +7,7 @@
 % packages
 \LoadClass[10pt]{article}
 \RequirePackage[margin=1in,top=0.9in]{geometry}
+\RequirePackage[UKenglish]{babel}
 \RequirePackage{hyperref}
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
