@@ -1,6 +1,4 @@
 # accept
-Urbana
-Champaign
 advisor
 Andreas
 Artemiou
@@ -9,12 +7,14 @@ biostatistics
 Borel
 Casberd
 Cattaneo
+Champaign
 Chandak
 Charlton
 Cucuringu
 doi
 DyadicKDE
 eprint
+Extremum
 Feng
 Jeston
 Jianqing
@@ -44,6 +44,7 @@ Sherrerd
 Smallman
 SML
 Springer
+Urbana
 wgunderwood
 Yingjie
 Yurinskii's
