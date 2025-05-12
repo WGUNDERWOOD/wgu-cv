@@ -16,11 +16,14 @@ DyadicKDE
 eprint
 Extremum
 Feng
+fmt
+formatter
 Jeston
 Jianqing
 jl
 Klusowski
 Kolmogorov
+LaTeX
 Lindeberg
 Masini
 math
@@ -44,6 +47,7 @@ Sherrerd
 Smallman
 SML
 Springer
+tex
 Urbana
 wgunderwood
 Yingjie
