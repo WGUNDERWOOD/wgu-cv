@@ -15,6 +15,7 @@ doi
 DyadicKDE
 eprint
 Extremum
+extremum
 Feng
 fmt
 formatter
