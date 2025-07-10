@@ -50,11 +50,9 @@
           phases = ["unpackPhase" "buildPhase" "installPhase"];
           buildPhase = ''
             export PATH="${pkgs.lib.makeBinPath buildInputs}";
-            export XDG_CACHE_HOME="$(mktemp -d)";
-            mkdir -p .cache/texmf-var
-            env TEXMFHOME=.cache TEXMFVAR=.cache/texmf-var \
-                SOURCE_DATE_EPOCH=${toString self.lastModified} \
-                just
+            export TEXMFVAR="$(mktemp -d)";
+            export SOURCE_DATE_EPOCH=${toString self.lastModified};
+            just
           '';
           installPhase = ''
             mkdir -p $out
