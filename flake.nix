@@ -1,7 +1,7 @@
 {
   description = "CV";
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-24.11;
+    nixpkgs.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     flake-utils.url = github:numtide/flake-utils;
     dotfiles.url = github:wgunderwood/dotfiles;
   };
@@ -20,7 +20,6 @@
       tex-build = pkgs.callPackage "${programs}/tex-build/tex-build.nix" {};
       tex-check = pkgs.callPackage "${programs}/tex-check/tex-check.nix" {};
       tex-clean = pkgs.callPackage "${programs}/tex-clean/tex-clean.nix" {};
-      tex-fmt = pkgs.callPackage "${programs}/tex-fmt.nix" {};
       todo-finder = pkgs.callPackage "${programs}/todo-finder/todo-finder.nix" {};
       aspell = pkgs.aspellWithDicts (d: [d.en]);
     in rec {
@@ -38,6 +37,7 @@
             pkgs.pngquant
             pkgs.poppler_utils
             pkgs.imagemagick
+            pkgs.tex-fmt
             aspell
             compress-pdf
             long-lines
@@ -45,7 +45,6 @@
             tex-build
             tex-check
             tex-clean
-            tex-fmt
             todo-finder
           ];
           phases = ["unpackPhase" "buildPhase" "installPhase"];
