@@ -22,6 +22,7 @@ Jianqing
 jl
 jus
 Klusowski
+Kotekal
 LaTeX
 Lindeberg
 Masini
@@ -40,6 +41,7 @@ ORF
 ORFE
 PCA
 Pereira
+polyadic
 preprints
 Samworth
 Smallman
@@ -52,6 +54,7 @@ Urbana
 ve
 wgunderwood
 Yingjie
+Yurinskii
 Yurinskii's
 
 # reject
