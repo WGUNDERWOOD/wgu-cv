@@ -1,6 +1,7 @@
 # accept
 advisor
 Andreas
+Armitage
 Artemiou
 arXiv
 Bhramar
