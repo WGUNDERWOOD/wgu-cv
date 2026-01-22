@@ -9,6 +9,7 @@ biostatistics
 Casberd
 Cattaneo
 Champaign
+Ching
 Cucuringu
 de
 doi
@@ -30,6 +31,7 @@ Masini
 math
 Matias
 Mihai
+minimax
 MMath
 MondrianForests
 motifcluster
@@ -43,6 +45,7 @@ ORFE
 PCA
 Pereira
 polyadic
+Popescu
 preprint
 preprints
 Samworth
