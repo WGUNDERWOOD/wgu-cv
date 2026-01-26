@@ -20,6 +20,7 @@ fmt
 formatter
 GSEM
 IB
+Ioana
 Jianqing
 jl
 jus
@@ -38,6 +39,7 @@ motifcluster
 MRC
 Mukherjee
 MyTutor
+Nico
 nonparametric
 optimization
 ORF
@@ -54,6 +56,7 @@ SML
 Springer
 StatMathAppli
 tex
+Tianyi
 Universit
 Urbana
 ve
