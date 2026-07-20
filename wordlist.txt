@@ -5,6 +5,7 @@ Armitage
 Artemiou
 arXiv
 Bhramar
+Biometrika
 biostatistics
 booktitle
 Casberd
