@@ -60,6 +60,7 @@ Smallman
 SML
 Springer
 StatMathAppli
+Technometrics
 tex
 Tianyi
 Universit
